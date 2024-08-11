@@ -12,6 +12,11 @@ This project is a backend system designed to manage inventory and sales for a sm
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB, used to interact with the database.
 - **body-parser**: Middleware for parsing incoming request bodies in a middleware before your handlers, available under `req.body`.
 - **cors**: Middleware to enable Cross-Origin Resource Sharing.
+  
+## How to Set Up and Run the Application
+### Prerequisites
+- **Node.js** and **npm** installed on your machine.
+- **MongoDB Atlas** account and cluster set up, or a locally running MongoDB instance.
 
 ### Installation
 
@@ -28,29 +33,6 @@ npm install
 ```bash
 npm start
 ```
-  
-
-## Project Structure
-
-shop-inventory-backend/
-│
-├── config/
-│ └── db.js # MongoDB connection configuration
-│
-├── controllers/
-│ ├── inventoryController.js # Controller for handling inventory operations
-│ └── billController.js # Controller for handling bill operations
-│
-├── models/
-│ ├── InventoryItem.js # Mongoose schema for inventory items
-│ └── Bill.js # Mongoose schema for bills
-│
-├── routes/
-│ ├── inventoryRoutes.js # Routes for inventory-related API endpoints
-│ └── billRoutes.js # Routes for bill-related API endpoints
-│
-├── app.js # Main application file
-├── package.json # Node.js dependencies and scripts
 
 ## API Endpoints
 
@@ -128,15 +110,5 @@ shop-inventory-backend/
    - **Description**: Retrieves details of a specific bill by its ID.
    - **Response**: JSON object of the specified bill.
 
-## How to Set Up and Run the Application
 
-### Prerequisites
-- **Node.js** and **npm** installed on your machine.
-- **MongoDB Atlas** account and cluster set up, or a locally running MongoDB instance.
 
-### Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone <repository-url>
-   cd shop-inventory-backend
